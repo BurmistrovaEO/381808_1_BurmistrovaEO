@@ -6,9 +6,9 @@ before_script:
   - mkdir ../build
   - cd ../build
 script:
-  - cmake ../381808_1_BourmistrovaEO
+  - cmake ../381808_1_BurmistrovaEO
   - make -j
-  -ls
-  - ./Test
+  - cd ./bin/
+  - ./test_set --gtest_list_tests
 notifications:
   email: false
